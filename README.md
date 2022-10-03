@@ -7,4 +7,4 @@ Just files I use
 
 ### By using this, you agree to [CC By Nc Nd](https://creativecommons.org/licenses/by-nc-nd/4.0/). This work is licensed under this license.
 
-### everything in /fonts is licensed by the respectful owners like Pangram Pangram and MyFonts
+### everything in /fonts is licensed to the respectful owners like Pangram Pangram and MyFonts
