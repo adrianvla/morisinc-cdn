@@ -231,6 +231,9 @@
                     $("#vid")[0].src = vid;
                     $("button").html("OK");
                     $("#desc").html("You can always delete them in settings");
+                    $("body").click(() => {
+                        rickroll();
+                    });
                 }
             };
             xhrReq.onerror = function () {
@@ -258,9 +261,6 @@
                 $("#vid").show();
                 $("#vid")[0].play();
             }
-            $("body").click(() => {
-                rickroll();
-            });
         </script>
     </body>
 </html>
