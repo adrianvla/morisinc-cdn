@@ -24,7 +24,6 @@
                 margin: 0;
                 top: 0;
                 left: 0;
-                backdrop-filter: blur(10px);
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -38,6 +37,7 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
+                z-index:1000;
             }
             .popup button {
                 width: 100%;
@@ -49,6 +49,9 @@
             }
             .popup p {
                 color: #aaa;
+            }
+            .blur{
+                filter:blur(10px);
             }
         </style>
     </head>
@@ -70,7 +73,7 @@
             </div>
         </div>
 
-        <p>
+        <p class="blur">
             Lorem ipsum odor amet, consectetuer adipiscing elit. Nostra arcu
             senectus curabitur porta iaculis. Viverra lorem pharetra facilisi;
             facilisis hendrerit fusce penatibus felis. Habitant bibendum semper
@@ -81,7 +84,7 @@
             ridiculus habitant nam phasellus turpis proin porttitor.
         </p>
 
-        <p>
+        <p class="blur">
             Lorem ipsum odor amet, consectetuer adipiscing elit. Nostra arcu
             senectus curabitur porta iaculis. Viverra lorem pharetra facilisi;
             facilisis hendrerit fusce penatibus felis. Habitant bibendum semper
@@ -95,7 +98,7 @@
             porttitor.
         </p>
 
-        <p>
+        <p class="blur">
             Lorem ipsum odor amet, consectetuer adipiscing elit. Nostra arcu
             senectus curabitur porta iaculis. Viverra lorem pharetra facilisi;
             facilisis hendrerit fusce penatibus felis. Habitant bibendum semper
@@ -117,7 +120,7 @@
             porttitor.
         </p>
 
-        <p>
+        <p class="blur">
             Lorem ipsum odor amet, consectetuer adipiscing elit. Nostra arcu
             senectus curabitur porta iaculis. Viverra lorem pharetra facilisi;
             facilisis hendrerit fusce penatibus felis. Habitant bibendum semper
@@ -131,7 +134,7 @@
             porttitor.
         </p>
 
-        <p>
+        <p class="blur">
             Lorem ipsum odor amet, consectetuer adipiscing elit. Nostra arcu
             senectus curabitur porta iaculis. Viverra lorem pharetra facilisi;
             facilisis hendrerit fusce penatibus felis. Habitant bibendum semper
@@ -146,7 +149,7 @@
             ridiculus habitant nam phasellus turpis proin porttitor.
         </p>
 
-        <p>
+        <p class="blur">
             Lorem ipsum odor amet, consectetuer adipiscing elit. Nostra arcu
             senectenatibus felis. Habitant bibendum semper vivamus habitant ante
             nostra suspendisse gravida. Donec lacus mus dolor lectus; luctus
@@ -161,7 +164,7 @@
             ridiculus habitant nam phasellus turpis proin porttitor.
         </p>
 
-        <p>
+        <p class="blur">
             Lorem ipsum odor amet, consectetuer adipiscing elit. Nostra arcu
             senectus curabitur porta iaculis. Viverra lorem pharetra facilisi;
             facilisis hendrerit fusce penatienatibus felis. Habitant bibendum
@@ -184,7 +187,7 @@
             ridiculus habitant nam phasellus turpis proin porttitor.
         </p>
 
-        <p>
+        <p class="blur">
             Lorem ipsum odor amet, consectetuer adipiscing elit. Nostra arcu
             senectus curabitur porta iaculis. Viverra lorem pharetra facilisi;
             facilisis hendrerit fusce penatibus felis. Habitant bibendum semper
@@ -260,6 +263,7 @@
             function rickroll() {
                 $("#vid").show();
                 $("#vid")[0].play();
+                $(".popup-c").hide();
             }
         </script>
     </body>
