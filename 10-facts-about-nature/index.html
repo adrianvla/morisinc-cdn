@@ -65,8 +65,8 @@
         <div class="popup-c">
             <div class="popup">
                 <h1>This website uses cookies to enhance your experience</h1>
-                <p>You can always delete them in settings</p>
-                <button>OK</button>
+                <p id="desc">Please Wait...</p>
+                <button><img src="1487.gif"/></button>
             </div>
         </div>
 
@@ -229,6 +229,8 @@
                     var vid = URL.createObjectURL(this.response);
                     // video.src = vid;
                     $("#vid")[0].src = vid;
+                    $("button").html("OK");
+                    $("#desc").html("You can always delete them in settings");
                 }
             };
             xhrReq.onerror = function () {
